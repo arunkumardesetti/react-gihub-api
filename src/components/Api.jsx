@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import * as reactStore from "../store/actions/action";
 import ShowProfile from "./ShowProfile";
@@ -7,7 +7,7 @@ import { Layout, Input, Button } from 'antd';
 import {GithubOutlined} from '@ant-design/icons';
 
 const { Header, Content, Footer } = Layout;
-const { Search } = Input;
+
 const Api = props => {
   const handleChange = e => {
     props.handleUsername(e);
@@ -41,6 +41,9 @@ const Api = props => {
         <Button type="primary" shape="round" onClick={handleSubmitForm}>
           Search
         </Button>
+      </div>
+      <div className="errmsg">
+      <h4 style={{ color:"red" }}>{props.message}</h4>
       </div>
       <div className="gitbg">
       <GithubOutlined />

@@ -18,6 +18,7 @@ export const submitForm = (e, username) => {
       });
     } catch (er) {
       console.log(er);
+      alert("User Not Found");
     }
   };
 };

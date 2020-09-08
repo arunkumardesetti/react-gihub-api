@@ -16,12 +16,12 @@ const ShowProfile = props => {
         <Breadcrumb.Item><a href="/">Home /</a></Breadcrumb.Item>
       </Breadcrumb>
       <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
-      <div className="getData">
+      <div className="showData">
       <Card
         hoverable
         style={{ width: 240 }}
         cover={<img alt="example" src={props.image_url} alt="" />}>
-        <h2><span style={{ color:"grey" }} > Username : </span> {props.username}</h2>
+        <h2><span style={{ color:"grey" }} >Username : </span> {props.username}</h2>
         <h3><span style={{ color:"grey" }} >Repositories : </span> {props.repos}</h3>
         <h3><span style={{ color:"grey" }} >Following : </span> {props.following}</h3>
         <h3><span style={{ color:"grey" }} >Followers : </span> {props.followers}</h3>

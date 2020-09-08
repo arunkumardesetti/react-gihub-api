@@ -18,7 +18,13 @@
 .getData {
   justify-content: center;
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.showData {
+  justify-content: center;
+  display: flex;
   text-align: center;
 }
 
@@ -41,5 +47,12 @@
   display: flex;
   margin-top: 40px;
   font-size: 250px;
+  text-align: center;
+}
+
+.errmsg {
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
   text-align: center;
 }
