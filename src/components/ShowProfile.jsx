@@ -10,7 +10,7 @@ const ShowProfile = props => {
   return (
     <Layout>
     <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
-    <div className="brand" ><span style={{ padding: '10px', fontSize:30}}><GithubOutlined /></span>Compare GitHub Profile</div>
+    <div className="brand" ><span style={{ padding: '10px', fontSize:30}}><GithubOutlined /></span><a href="/" style={{ color:'white'}}>Compare GitHub Profile</a></div>
     </Header>
     <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
       <Breadcrumb style={{ margin: '16px 0' }}>
