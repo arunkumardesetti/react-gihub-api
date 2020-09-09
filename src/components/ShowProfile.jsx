@@ -21,7 +21,8 @@ const ShowProfile = props => {
       <Card
         hoverable
         style={{ width: 240 }}
-        cover={<img alt="example" src={props.image_url} alt="" />}>
+        cover={<img alt="example" src={props.image_url} alt="" />}
+        >
         <h2><span style={{ color:"grey" }} >Username : </span> {props.username}</h2>
         <h3><span style={{ color:"grey" }} >Repositories : </span> {props.repos}</h3>
         <h3><span style={{ color:"grey" }} >Following : </span> {props.following}</h3>
