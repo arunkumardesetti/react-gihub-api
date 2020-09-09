@@ -24,11 +24,13 @@ const ShowProfile = props => {
         cover={<img alt="example" src={props.image_url} alt="" />}
         >
         <h2><span style={{ color:"grey" }} >Username : </span> {props.username}</h2>
+        <h3><span style={{ color:"grey" }} >Name : </span> {props.name}</h3>
         <h3><span style={{ color:"grey" }} >Repositories : </span> {props.repos}</h3>
         <h3><span style={{ color:"grey" }} >Following : </span> {props.following}</h3>
         <h3><span style={{ color:"grey" }} >Followers : </span> {props.followers}</h3>
+        <h3><span style={{ color:"grey" }} >Url : </span></h3><a className="htmlurl" href={props.html_url}> {props.html_url}</a>
         </Card>
-    </div>
+      </div>
       </div>
     </Content>
     <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
@@ -39,11 +41,13 @@ const ShowProfile = props => {
 const mapStateToProps = state => {
   return {
     username: state.username,
+    name: state.name,
     repos: state.repos,
     following: state.following,
     followers: state.followers,
     grabbedData: state.grabbedData,
-    image_url: state.image_url
+    image_url: state.image_url,
+    html_url: state.html_url
   };
 };
 

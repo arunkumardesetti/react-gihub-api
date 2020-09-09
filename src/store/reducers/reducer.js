@@ -1,11 +1,13 @@
 let initState = {
   username: "",
+  name:"",
   repos: "",
   following: "",
   followers: "",
   grabbedData: false,
   message: "",
-  image_url: ""
+  image_url: "",
+  url: ""
 };
 
 const reducer = (state = initState, action) => {
@@ -20,9 +22,11 @@ const reducer = (state = initState, action) => {
       return {
         ...state,
         repos: ch.public_repos,
+        name: ch.name,
         following: ch.following,
         followers: ch.followers,
         image_url: ch.avatar_url,
+        html_url: ch.html_url,
         message: "",
         grabbedData: true
       };
