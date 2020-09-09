@@ -7,7 +7,7 @@ let initState = {
   grabbedData: false,
   message: "",
   image_url: "",
-  url: ""
+  html_url: ""
 };
 
 const reducer = (state = initState, action) => {
